@@ -59,8 +59,8 @@
 			children = (
 				200FFF691C32CADB001E691B /* Package.swift */,
 				200FFF6B1C32CAFC001E691B /* README.md */,
-				200FFF4F1C32C895001E691B /* Millis */,
-				200FFF5B1C32C895001E691B /* MillisTests */,
+				200FFF4F1C32C895001E691B /* Sources */,
+				200FFF5B1C32C895001E691B /* Tests */,
 				200FFF4E1C32C895001E691B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,23 +74,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		200FFF4F1C32C895001E691B /* Millis */ = {
+		200FFF4F1C32C895001E691B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				200FFF501C32C895001E691B /* Millis.h */,
 				200FFF671C32C8A7001E691B /* Millis.swift */,
 				200FFF521C32C895001E691B /* Info.plist */,
 			);
-			path = Millis;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		200FFF5B1C32C895001E691B /* MillisTests */ = {
+		200FFF5B1C32C895001E691B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				200FFF5C1C32C895001E691B /* MillisTests.swift */,
 				200FFF5E1C32C895001E691B /* Info.plist */,
 			);
-			path = MillisTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +320,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Millis/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evanlucas.Millis;
@@ -340,7 +340,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Millis/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evanlucas.Millis;
@@ -353,7 +353,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MillisTests/Info.plist;
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evanlucas.MillisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -364,7 +365,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MillisTests/Info.plist;
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evanlucas.MillisTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
