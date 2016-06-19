@@ -1,3 +1,4 @@
 out/
 .build/
 default.profraw
+testprof.profdata
