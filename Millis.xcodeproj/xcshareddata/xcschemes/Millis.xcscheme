@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "9999"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "200FFF4C1C32C895001E691B"
+               BlueprintIdentifier = "______Target_Millis"
                BuildableName = "Millis.framework"
                BlueprintName = "Millis"
                ReferencedContainer = "container:Millis.xcodeproj">
@@ -26,29 +26,19 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "200FFF561C32C895001E691B"
-               BuildableName = "MillisTests.xctest"
-               BlueprintName = "MillisTests"
+               BlueprintIdentifier = "______Target_MillisTestSuite"
+               BuildableName = "MillisTestSuite.xctest"
+               BlueprintName = "MillisTestSuite"
                ReferencedContainer = "container:Millis.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "200FFF4C1C32C895001E691B"
-            BuildableName = "Millis.framework"
-            BlueprintName = "Millis"
-            ReferencedContainer = "container:Millis.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -65,7 +55,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "200FFF4C1C32C895001E691B"
+            BlueprintIdentifier = "______Target_Millis"
             BuildableName = "Millis.framework"
             BlueprintName = "Millis"
             ReferencedContainer = "container:Millis.xcodeproj">
@@ -80,15 +70,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "200FFF4C1C32C895001E691B"
-            BuildableName = "Millis.framework"
-            BlueprintName = "Millis"
-            ReferencedContainer = "container:Millis.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

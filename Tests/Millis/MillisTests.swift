@@ -35,25 +35,25 @@ class MillisTests: XCTestCase {
   }
 
   func testIntLong() {
-    let millisecond = ms(1, displayType: .Long)
+    let millisecond = ms(1, displayType: .long)
     XCTAssertEqual(millisecond, "1 ms")
-    let second = ms(1000, displayType: .Long)
+    let second = ms(1000, displayType: .long)
     XCTAssertEqual(second, "1 second")
-    let seconds = ms(2000, displayType: .Long)
+    let seconds = ms(2000, displayType: .long)
     XCTAssertEqual(seconds, "2 seconds")
-    let minute = ms(1000 * 60, displayType: .Long)
+    let minute = ms(1000 * 60, displayType: .long)
     XCTAssertEqual(minute, "1 minute")
-    let minutes = ms(1000 * 60 * 2, displayType: .Long)
+    let minutes = ms(1000 * 60 * 2, displayType: .long)
     XCTAssertEqual(minutes, "2 minutes")
-    let hour = ms(1000 * 60 * 60, displayType: .Long)
+    let hour = ms(1000 * 60 * 60, displayType: .long)
     XCTAssertEqual(hour, "1 hour")
-    let hours = ms(1000 * 60 * 60 * 2, displayType: .Long)
+    let hours = ms(1000 * 60 * 60 * 2, displayType: .long)
     XCTAssertEqual(hours, "2 hours")
-    let day = ms(1000 * 60 * 60 * 24, displayType: .Long)
+    let day = ms(1000 * 60 * 60 * 24, displayType: .long)
     XCTAssertEqual(day, "1 day")
-    let days = ms(1000 * 60 * 60 * 24 * 2, displayType: .Long)
+    let days = ms(1000 * 60 * 60 * 24 * 2, displayType: .long)
     XCTAssertEqual(days, "2 days")
-    let another = ms(1000000, displayType: .Long)
+    let another = ms(1000000, displayType: .long)
     XCTAssertEqual(another, "16 minutes")
   }
 
@@ -69,13 +69,13 @@ class MillisTests: XCTestCase {
   }
 
   func testInt32Long() {
-    let millisecond = ms(Int32(1), displayType: .Long)
+    let millisecond = ms(Int32(1), displayType: .long)
     XCTAssertEqual(millisecond, "1 ms")
-    let second = ms(Int32(1000), displayType: .Long)
+    let second = ms(Int32(1000), displayType: .long)
     XCTAssertEqual(second, "1 second")
-    let minute = ms(Int32(1000 * 60), displayType: .Long)
+    let minute = ms(Int32(1000 * 60), displayType: .long)
     XCTAssertEqual(minute, "1 minute")
-    let hour = ms(Int32(1000 * 60 * 60), displayType: .Long)
+    let hour = ms(Int32(1000 * 60 * 60), displayType: .long)
     XCTAssertEqual(hour, "1 hour")
   }
 
@@ -91,13 +91,13 @@ class MillisTests: XCTestCase {
   }
 
   func testInt64Long() {
-    let millisecond = ms(Int64(1), displayType: .Long)
+    let millisecond = ms(Int64(1), displayType: .long)
     XCTAssertEqual(millisecond, "1 ms")
-    let second = ms(Int64(1000), displayType: .Long)
+    let second = ms(Int64(1000), displayType: .long)
     XCTAssertEqual(second, "1 second")
-    let minute = ms(Int64(1000 * 60), displayType: .Long)
+    let minute = ms(Int64(1000 * 60), displayType: .long)
     XCTAssertEqual(minute, "1 minute")
-    let hour = ms(Int64(1000 * 60 * 60), displayType: .Long)
+    let hour = ms(Int64(1000 * 60 * 60), displayType: .long)
     XCTAssertEqual(hour, "1 hour")
   }
 }

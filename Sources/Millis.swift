@@ -22,8 +22,8 @@ let h = Int64(H)
 let d = Int64(D)
 
 public enum MillisDisplayType: UInt8 {
-  case Short = 0
-  case Long
+  case short = 0
+  case long
 }
 
 /// Returns a string representing a short, human
@@ -33,20 +33,20 @@ public enum MillisDisplayType: UInt8 {
 ///     - value: The input value in milliseconds
 ///
 /// - Returns: A string
-public func ms(value:Int, displayType:MillisDisplayType = .Short) -> String {
+public func ms(_ value:Int, displayType:MillisDisplayType = .short) -> String {
   return ms(Int64(value), displayType: displayType)
 }
 
-public func ms(value:Int32, displayType:MillisDisplayType = .Short) -> String {
+public func ms(_ value:Int32, displayType:MillisDisplayType = .short) -> String {
   return ms(Int64(value), displayType: displayType)
 }
 
-public func ms(value:Int64, displayType:MillisDisplayType = .Short) -> String {
+public func ms(_ value:Int64, displayType:MillisDisplayType = .short) -> String {
   let val = Int64(value)
 
   if val >= d {
     let o = val / d
-    if displayType == .Long {
+    if displayType == .long {
       return getLongVal(o, str: "day")
     }
     return String(o) + "d"
@@ -54,7 +54,7 @@ public func ms(value:Int64, displayType:MillisDisplayType = .Short) -> String {
 
   if val >= h {
     let o = val / h
-    if displayType == .Long {
+    if displayType == .long {
       return getLongVal(o, str: "hour")
     }
     return String(o) + "h"
@@ -62,7 +62,7 @@ public func ms(value:Int64, displayType:MillisDisplayType = .Short) -> String {
 
   if val >= m {
     let o = val / m
-    if displayType == .Long {
+    if displayType == .long {
       return getLongVal(o, str: "minute")
     }
     return String(o) + "m"
@@ -70,19 +70,19 @@ public func ms(value:Int64, displayType:MillisDisplayType = .Short) -> String {
 
   if val >= s {
     let o = val / s
-    if displayType == .Long {
+    if displayType == .long {
       return getLongVal(o, str: "second")
     }
     return String(o) + "s"
   }
 
-  if displayType == .Long {
+  if displayType == .long {
     return String(val) + " ms"
   }
   return String(val) + "ms"
 }
 
-func getLongVal(val:Int64, str:String) -> String {
+func getLongVal(_ val:Int64, str:String) -> String {
   if val == 1 {
     return "1 \(str)"
   }
