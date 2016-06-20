@@ -55,6 +55,8 @@ class MillisTests: XCTestCase {
     XCTAssertEqual(days, "2 days")
     let another = ms(1000000, displayType: .long)
     XCTAssertEqual(another, "16 minutes")
+    let m = ms(234234234, displayType: .long)
+    XCTAssertEqual(m, "2 days")
   }
 
   func testInt32() {

@@ -29,18 +29,32 @@ public enum MillisDisplayType: UInt8 {
 /// Returns a string representing a short, human
 /// readable version of the _value_ in milliseconds
 ///
-/// - Parameters:
-///     - value: The input value in milliseconds
+/// - parameter value:       The number in milliseconds
+/// - parameter displayType: Short or long output
 ///
-/// - Returns: A string
+/// - returns: String
 public func ms(_ value:Int, displayType:MillisDisplayType = .short) -> String {
   return ms(Int64(value), displayType: displayType)
 }
 
+/// Returns a string representing a short, human
+/// readable version of the _value_ in milliseconds
+///
+/// - parameter value:       The number in milliseconds
+/// - parameter displayType: Short or long output
+///
+/// - returns: String
 public func ms(_ value:Int32, displayType:MillisDisplayType = .short) -> String {
   return ms(Int64(value), displayType: displayType)
 }
 
+/// Returns a string representing a short, human
+/// readable version of the _value_ in milliseconds
+///
+/// - parameter value:       The number in milliseconds
+/// - parameter displayType: Short or long output
+///
+/// - returns: String
 public func ms(_ value:Int64, displayType:MillisDisplayType = .short) -> String {
   let val = Int64(value)
 
